@@ -12,7 +12,7 @@ jsonArray=imageTiles;
 imgArray:ImageTiles[]=[];
 
 // imageSource:String;
-// entered:boolean=false;
+// entered:boolean=false;;
 constructor() {
   console.log('hohla');
  }
