@@ -19,6 +19,31 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+.jumbotron {
+  background-image: url("../../img/jumbotron.jpg");
+  padding-top: 20%;
+  padding-bottom: 20%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#projects_title {
+  padding: 2%;
+  margin: 2%;
+}
+
+.col-md-4 {
+  padding: 3%;
+  border: 1px solid #dbdbdb;
+  display: inline-block;
+}
+.testing_01 {
+  width: 100%
+}
+
+
 
 /*
  * Base structure

@@ -33,6 +33,7 @@ export class AuthService {
   authenticateUser(user){
     let headers = new HttpHeaders;
     headers.append('Content-Type', 'application/json');
+    // console.log(helper.isTokenExpired(localStorage.id_token));
     return this.http.post<ServerResponse>('users/authenticate', user,{headers: headers})
       .pipe(map(res => res));
   }
