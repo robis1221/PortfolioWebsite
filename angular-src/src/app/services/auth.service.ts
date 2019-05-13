@@ -25,7 +25,7 @@ export class AuthService {
   registerUser(user): Observable<ServerResponse>{
     let headers = new HttpHeaders;
     headers.append('Content-Type', 'application/json');
-    return this.http.post<ServerResponse>('users/register', user,{headers: headers})
+    return this.http.post<ServerResponse>('http://localhost:3000/users/register', user,{headers: headers})
       .pipe(map(res => res));
 
   }
@@ -34,7 +34,7 @@ export class AuthService {
     let headers = new HttpHeaders;
     headers.append('Content-Type', 'application/json');
     // console.log(helper.isTokenExpired(localStorage.id_token));
-    return this.http.post<ServerResponse>('users/authenticate', user,{headers: headers})
+    return this.http.post<ServerResponse>('http://localhost:3000/users/authenticate', user,{headers: headers})
       .pipe(map(res => res));
   }
 
@@ -43,7 +43,7 @@ export class AuthService {
     this.loadToken();
     headers = headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get<ServerResponse>('users/profile', {headers: headers})
+    return this.http.get<ServerResponse>('http://localhost:3000/users/profile', {headers: headers})
       .pipe(map(res => res));
   }
 
