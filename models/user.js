@@ -20,8 +20,8 @@ module.exports.getUserByUsername = function(username, callback){
     const query = {username:username}
     User.findOne(query, callback);
 }
-//remove this comment to be able to register, see routes/users.js
-/*module.exports.addUser=function(newUser, callback){
+//remove this comment to be able to register, see routes/users.jsaaa
+module.exports.addUser=function(newUser, callback){
 bcrypt.genSalt(10, (err,salt)=>{
     bcrypt.hash(newUser.password, salt, (err, hash)=>{
         if(err) throw err;
@@ -30,7 +30,7 @@ bcrypt.genSalt(10, (err,salt)=>{
     })
 });
 }
-*/
+
 module.exports.comparePassword=function(candidatePassword,hash,callback){
     bcrypt.compare(candidatePassword, hash, (err,isMatch)=>{
 if(err) throw err;

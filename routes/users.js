@@ -7,7 +7,7 @@ const config = require('../config/database');
 
 //remove the comment to register a new admin through localhost:xxx/users/register
 //also remove the comment in models/user.js -> addUser func
-/*router.post('/register', (req,res,next)=>{
+router.post('/register', (req,res,next)=>{
     let newUser = new User({
         username:req.body.username,
         password:req.body.password
@@ -21,7 +21,6 @@ const config = require('../config/database');
         }
     })
 })
-*/
 
 //authenticate
 router.post('/authenticate',(req, res, next) =>{
