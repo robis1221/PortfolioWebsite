@@ -26,7 +26,7 @@ mouseLeave(i:number){
 }
 
   ngOnInit() {
-  this.jsonArray.forEach(obj => {
+  this.jsonArray.forEach(obj => {1
    var temp:ImageTiles=new ImageTiles(obj.mainImg,obj.id,obj.mainImg,obj.onHoverImg,obj.entered,obj.route,obj.title,obj.shorttext,obj.longtext);
   this.imgArray.push(temp);
 });
