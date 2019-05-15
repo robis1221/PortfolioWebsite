@@ -1,2 +1,2 @@
     <textarea ref-textarea [(ngModel)]="stringJson" rows="30" cols = "200">{{this.stringJson}}</textarea>
-      <a (click)=saveJson(textarea.value) class="btn btn-primary">Save</a>
+      <a (click)=saveJson(textarea.value) class="btn btn-primary" [routerLink]="['/']">Save</a>

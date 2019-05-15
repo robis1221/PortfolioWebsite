@@ -10,9 +10,6 @@
             <a class="nav-link" [routerLink]="['/']">Home</a>
         </li>
         <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
-            <a class="nav-link" [routerLink]="['/about']">About</a>
-        </li>
-        <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
             <a class="nav-link" [routerLink]="['/projects']">Projects</a>
         </li>
         <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
@@ -31,9 +28,9 @@
           <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
               <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
           </li>
-          <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+          <!-- <li *ngIf="authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
               <a class="nav-link" [routerLink]="['/profile']">Profile</a>
-          </li>
+          </li> -->
         <li *ngIf="!authService.loggedIn()" class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
             <a class="nav-link" [routerLink]="['/login']">Login</a>
         </li>
