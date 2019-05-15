@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import { HttpModule } from '@angular/http';
+//import {NativeScriptHttpModule} from "nativescript-angular/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +23,9 @@ import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './guards/auth.guard';
+import { Project1Component } from './project1/project1.component';
+import { Project2Component } from './project2/project2.component';
+import { Project3Component } from './project3/project3.component';
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
@@ -31,6 +36,9 @@ const appRoutes: Routes = [
   {path:'projects', component: ProjectsComponent},
   {path:'about', component: AboutComponent},
   {path:'contact', component: ContactComponent},
+  {path:'project1', component: Project1Component},
+  {path:'project2', component: Project2Component},
+  {path:'project3', component: Project3Component},
 ]
 
 @NgModule({
@@ -44,7 +52,11 @@ const appRoutes: Routes = [
     ProfileComponent,
     AboutComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    Project1Component,
+    Project2Component,
+    Project3Component,
+   // NativeScriptHttpModule
   ],
   imports: [
     BrowserModule,
