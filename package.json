@@ -19,7 +19,7 @@
     "cors": "*",
     "express": "*",
     "jsonwebtoken": "*",
-    "mongoose": "^5.5.2",
+    "mongoose": "^5.7.5",
     "nativescript-angular": "^7.2.3",
     "passport": "*",
     "passport-jwt": "*",
